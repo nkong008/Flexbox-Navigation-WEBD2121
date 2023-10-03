@@ -1,0 +1,128 @@
+$anton: "Anton",
+sans-serif;
+$phudu: "Phudu",
+cursive;
+$roboto: "Roboto",
+sans-serif;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+// media queries for phones
+// max-width: 480px
+@media screen and (max-width: 480px) {
+    body {
+       
+        nav {
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    
+            span#logo {
+                font-family: $phudu;
+                font-size: 4em;
+                // background-color: whitesmoke;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                padding-top: 2em;
+                // letter-spacing: 0.10em;
+            }
+
+            #nav-display {
+                width: 100%;
+                height: auto;
+                position: absolute;
+
+                ul {
+
+                    padding-top: 4em;
+                    // background-color: whitesmoke;
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    li {
+                        padding-top: 2em;
+
+                        a {
+                            text-decoration: none;
+                            font-family: $phudu;
+                            color: white;
+                            font-size: 1.5em;
+                            letter-spacing: 0.10em;
+                            transition: all 350ms linear;
+                        }
+
+                        a:hover {
+                            color: black;
+                            border-bottom: 0.25em solid black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// media queries for desktop
+@media screen and (min-width: 480px) {
+    body {
+        
+        nav {
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    
+            span#logo {
+                padding-top: 0.5em;
+                font-family: $phudu;
+                font-size: 2em;
+                padding-left: 0.5em;
+                position: absolute;
+
+            }
+
+            #nav-display {
+                display: flex;
+                padding-left: 2em;
+                ul {
+
+                    list-style-type: none;
+                    margin-left: auto;
+                    display: flex;
+                    align-items: center;
+                    padding-top: 2em;
+                    
+
+                    li {
+                        a {
+                            text-decoration: none;
+                            font-family: $phudu;
+                            color: white;
+                            font-size: 1.2em;
+                            letter-spacing: 0.10em;
+                            transition: all 350ms linear;
+                            padding-right: 2.5em;
+
+                        }
+
+                        a:hover {
+                            color: black;
+                            // border-bottom: 0.25em solid black;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
